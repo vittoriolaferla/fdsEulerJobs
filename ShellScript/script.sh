@@ -3,9 +3,10 @@
 #SBATCH -e /cluster/home/vlaferla/fdsEulerJobs/0/firstExample.err
 #SBATCH -o /cluster/home/vlaferla/fdsEulerJobs/0/firstExample.log
 #SBATCH --partition=normal.24h
-#SBATCH --ntasks=1
-#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --nodes=2
 #SBATCH --cpus-per-task=1
+#SBATCH --ntasks-per-node=2
 #SBATCH --time=2:0:0
 
 export OMP_NUM_THREADS=1
@@ -19,5 +20,8 @@ if [ ! -x "/cluster/home/vlaferla/FDS/FDS6/bin/fds" ]; then
   exit 1
 fi
 
-# Run the application using mpirun
-mpirun -np 1 /cluster/home/vlaferla/FDS/FDS6/bin/fds firstJob.fds
+# Generate a hostfile from the SLURM node list
+scontrol show hostname $SLURM_JOB_NODELIST > hostfile
+
+# Run the application using mpirun with the hostfile
+mpirun -np 4 --hostfile hostfile /cluster/home/vlaferla/FDS/FDS6/bin/fds firstJob.fds
