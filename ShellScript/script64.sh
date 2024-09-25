@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -J firstExample
-#SBATCH -e /cluster/home/vlaferla/fdsEulerJobs/0/firstExample.err
-#SBATCH -o /cluster/home/vlaferla/fdsEulerJobs/0/firstExample.log
+#SBATCH -e /cluster/home/vlaferla/fdsEulerJobs/64/firstExample.err
+#SBATCH -o /cluster/home/vlaferla/fdsEulerJobs/64/firstExample.log
 #SBATCH --partition=bigmem.24h
 #SBATCH --ntasks=1
 #SBATCH --nodes=1
@@ -9,7 +9,7 @@
 #SBATCH --time=2:0:0
 
 # Define the timing output file
-TIMING_FILE="/cluster/home/vlaferla/fdsEulerJobs/0/job_timing.log"
+TIMING_FILE="/cluster/home/vlaferla/fdsEulerJobs/64/job_timing.log"
 
 # Record the start time
 echo "Job started at $(date)" > "$TIMING_FILE"
