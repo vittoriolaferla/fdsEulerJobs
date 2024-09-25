@@ -2,7 +2,7 @@
 #SBATCH -J firstExample
 #SBATCH -e /cluster/home/vlaferla/fdsEulerJobs/0/firstExample.err
 #SBATCH -o /cluster/home/vlaferla/fdsEulerJobs/0/firstExample.log
-#SBATCH --partition=<name of queue>
+#SBATCH --partition=normal.24h
 #SBATCH --ntasks=4
 #SBATCH --nodes=2
 #SBATCH --cpus-per-task=1
