@@ -10,6 +10,6 @@
 #SBATCH --time=2:0:0
 
 export OMP_NUM_THREADS=1
-cd $SLURM_SUBMIT_DIR
+cd /cluster/home/vlaferla/fdsEulerJobs/0
 
 srun -N 2 -n 4 --ntasks-per-node=2 /cluster/home/vlaferla/FDS/FDS6/bin/fds firstJob.fds
