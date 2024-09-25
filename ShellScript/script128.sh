@@ -2,7 +2,7 @@
 #SBATCH -J firstExample
 #SBATCH -e /cluster/home/vlaferla/fdsEulerJobs/128/firstExample.err
 #SBATCH -o /cluster/home/vlaferla/fdsEulerJobs/128/firstExample.log
-#SBATCH --partition=bigmem.24h
+#SBATCH --partition=ultramem.24h
 #SBATCH --ntasks=1
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
