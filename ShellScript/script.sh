@@ -9,13 +9,9 @@
 #SBATCH --ntasks-per-node=2
 #SBATCH --time=2:0:0
 
-# Load necessary modules
-module purge
-module load gcc/8.3.0        # Replace with available GCC module
-module load openmpi/4.0.1    # Replace with available OpenMPI module
-# module load any other modules required by FDS
-
 export OMP_NUM_THREADS=1
+export LD_LIBRARY_PATH=/cluster/home/vlaferla/FDS/FDS6/bin/INTEL/lib:$LD_LIBRARY_PATH
+export PATH=/cluster/home/vlaferla/FDS/FDS6/bin/INTEL/bin:$PATH
 cd $SLURM_SUBMIT_DIR
 
 # Verify that the executable exists and is executable
