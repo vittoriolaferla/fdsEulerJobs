@@ -10,4 +10,4 @@
 #SBATCH --time=2:0:0
 export OMP_NUM_THREADS=1
 cd <pwd>
-srun -N 2 -n 4 --ntasks-per-node 2 /cluster/home/vlaferla/fdsEulerJobs/0/\0\0.fds 
+srun -N 2 -n 4 --ntasks-per-node 2 /cluster/home/vlaferla/fdsEulerJobs/0/firstJob.fds
