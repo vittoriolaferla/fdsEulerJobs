@@ -1,0 +1,72 @@
+
+ Starting FDS ...
+
+ MPI Process      0 started on eu-g9-048-2
+
+ Reading FDS input file ...
+
+
+ Fire Dynamics Simulator
+
+ Current Date     : September 25, 2024  15:04:50
+ Revision         : FDS-6.9.1-0-g889da6a-release
+ Revision Date    : Sun Apr 7 17:05:06 2024 -0400
+ Compiler         : Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.7.1 Build 20221019_000000
+ Compilation Date : Apr 09, 2024 13:24:51
+
+ Number of MPI Processes:  1
+
+ MPI version: 3.1
+ MPI library version: Intel(R) MPI Library 2021.6 for Linux* OS
+
+
+ Job TITLE        : Case: 0, Vent Type:Linear
+ Job ID string    : 0
+
+ Time Step:       1, Simulation Time:      0.06 s
+ Time Step:       2, Simulation Time:      0.11 s
+ Time Step:       3, Simulation Time:      0.17 s
+ Time Step:       4, Simulation Time:      0.23 s
+ Time Step:       5, Simulation Time:      0.28 s
+ Time Step:       6, Simulation Time:      0.34 s
+ Time Step:       7, Simulation Time:      0.39 s
+ Time Step:       8, Simulation Time:      0.45 s
+ Time Step:       9, Simulation Time:      0.51 s
+ Time Step:      10, Simulation Time:      0.56 s
+ Time Step:      20, Simulation Time:      1.13 s
+ Time Step:      30, Simulation Time:      1.69 s
+ Time Step:      40, Simulation Time:      2.26 s
+ Time Step:      50, Simulation Time:      2.82 s
+ Time Step:      60, Simulation Time:      3.38 s
+ Time Step:      70, Simulation Time:      3.86 s
+ Time Step:      80, Simulation Time:      4.24 s
+ Time Step:      90, Simulation Time:      4.60 s
+ Time Step:     100, Simulation Time:      4.97 s
+ Time Step:     200, Simulation Time:      8.64 s
+ Time Step:     300, Simulation Time:     12.56 s
+ Time Step:     400, Simulation Time:     16.67 s
+ Time Step:     500, Simulation Time:     20.58 s
+ Time Step:     600, Simulation Time:     24.59 s
+ Time Step:     700, Simulation Time:     28.18 s
+ Time Step:     800, Simulation Time:     31.90 s
+ Time Step:     900, Simulation Time:     36.07 s
+ Time Step:    1000, Simulation Time:     40.30 s
+ Time Step:    1100, Simulation Time:     44.46 s
+ Time Step:    1200, Simulation Time:     48.57 s
+ Time Step:    1300, Simulation Time:     52.67 s
+ Time Step:    1400, Simulation Time:     56.65 s
+ Time Step:    1500, Simulation Time:     60.57 s
+ Time Step:    1600, Simulation Time:     64.42 s
+ Time Step:    1700, Simulation Time:     68.54 s
+ Time Step:    1800, Simulation Time:     72.44 s
+ Time Step:    1900, Simulation Time:     76.30 s
+ Time Step:    2000, Simulation Time:     80.37 s
+ Time Step:    2100, Simulation Time:     84.33 s
+ Time Step:    2200, Simulation Time:     88.64 s
+ Time Step:    2300, Simulation Time:     92.88 s
+ Time Step:    2400, Simulation Time:     96.77 s
+ Time Step:    2482, Simulation Time:    100.00 s
+
+STOP: FDS completed successfully (CHID: 0)
+/var/spool/slurm/slurmd/state/job9207700/slurm_script: line 38: unexpected EOF while looking for matching `"'
+/var/spool/slurm/slurmd/state/job9207700/slurm_script: line 39: syntax error: unexpected end of file
